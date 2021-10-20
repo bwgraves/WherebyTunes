@@ -10,7 +10,7 @@ class tuneBot {
         this.roomName = roomName;
         this.browser = await playwright.chromium.launch(
         { 
-            headless: false,
+            // headless: false,
             args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--use-file-for-fake-audio-capture=song.wav', '--no-sandbox', '--enable-logging --v=1'],
         });
     }
